@@ -8,5 +8,4 @@ router.post("/editora", editoraController.createEditora);
 router.put("/editora/:id", editoraController.updateEditora);
 router.delete("/editora/:id", editoraController.deleteEditora);
 
-
 module.exports = router;

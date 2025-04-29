@@ -24,8 +24,7 @@ const getHeroiById = async (id) => {
         `SELECT herois.*, editoras.name AS editora_name 
         FROM herois 
         LEFT JOIN editoras ON herois.editora_id = editoras.id 
-        WHERE herois.id = $1`,
-        [id]
+        WHERE herois.id = $1`, [id]
     );
     return result.rows[0];
 };
